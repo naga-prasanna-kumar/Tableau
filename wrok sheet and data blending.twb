@@ -1,0 +1,593 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Customers+ (Multiple Connections)' inline='true' name='federated.059glx91bcyk6o12c7zjz0qs13fs' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Customers' name='excel-direct.1cd9mqg06m2agn1ghh5ga0uq8k3q'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/gvanj/Downloads/Customers.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1cd9mqg06m2agn1ghh5ga0uq8k3q' name='Customers' table='[Customers$]' type='table'>
+          <columns gridOrigin='A1:D7:no:A1:D7:0' header='yes' outcome='6'>
+            <column datatype='string' name='Customer_id' ordinal='0' />
+            <column datatype='string' name='First Name' ordinal='1' />
+            <column datatype='string' name='Last Name' ordinal='2' />
+            <column datatype='integer' name='Walletbalance' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Customers]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D7:no:A1:D7:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer_id]</local-name>
+            <parent-name>[Customers]</parent-name>
+            <remote-alias>Customer_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Customers_0BF6EE7A6EE8467E94486C8C7A3A4E94]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>First Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[First Name]</local-name>
+            <parent-name>[Customers]</parent-name>
+            <remote-alias>First Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Customers_0BF6EE7A6EE8467E94486C8C7A3A4E94]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Last Name]</local-name>
+            <parent-name>[Customers]</parent-name>
+            <remote-alias>Last Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Customers_0BF6EE7A6EE8467E94486C8C7A3A4E94]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Walletbalance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Walletbalance]</local-name>
+            <parent-name>[Customers]</parent-name>
+            <remote-alias>Walletbalance</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Customers_0BF6EE7A6EE8467E94486C8C7A3A4E94]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Customer id' datatype='string' name='[Customer_id]' role='dimension' type='nominal' />
+      <column caption='Customers' datatype='table' name='[__tableau_internal_object_id__].[Customers_0BF6EE7A6EE8467E94486C8C7A3A4E94]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/gvanj/AppData/Local/Temp/TableauTemp/#TableauTemp_17c0eso1xrtldd1avr2vx0b2k08m.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/18/2026 08:00:55 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Customer_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Customers</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Customers_0BF6EE7A6EE8467E94486C8C7A3A4E94]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>First Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[First Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>First Name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Customers</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Customers_0BF6EE7A6EE8467E94486C8C7A3A4E94]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Last Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Last Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Last Name</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Customers</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Customers_0BF6EE7A6EE8467E94486C8C7A3A4E94]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Walletbalance</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Walletbalance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Walletbalance</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Customers</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Customers_0BF6EE7A6EE8467E94486C8C7A3A4E94]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='20' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Customers' id='Customers_0BF6EE7A6EE8467E94486C8C7A3A4E94'>
+            <properties context=''>
+              <relation connection='excel-direct.1cd9mqg06m2agn1ghh5ga0uq8k3q' name='Customers' table='[Customers$]' type='table'>
+                <columns gridOrigin='A1:D7:no:A1:D7:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Customer_id' ordinal='0' />
+                  <column datatype='string' name='First Name' ordinal='1' />
+                  <column datatype='string' name='Last Name' ordinal='2' />
+                  <column datatype='integer' name='Walletbalance' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='ORDERS (Orders)' inline='true' name='federated.0tbha7z01rvsem16spgnl1q1z08p' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Orders' name='excel-direct.0x409so0pyxkse1aabz4d0z404e0'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/gvanj/Downloads/Orders.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0x409so0pyxkse1aabz4d0z404e0' name='ORDERS' table='[ORDERS$]' type='table'>
+          <columns gridOrigin='A1:D21:no:A1:D21:0' header='yes' outcome='6'>
+            <column datatype='string' name='Customer_id' ordinal='0' />
+            <column datatype='string' name='Order_id' ordinal='1' />
+            <column datatype='real' name='Sales' ordinal='2' />
+            <column datatype='string' name='Product_id' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ORDERS]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D21:no:A1:D21:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer_id]</local-name>
+            <parent-name>[ORDERS]</parent-name>
+            <remote-alias>Customer_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ORDERS_661298E648794023A2ABB6D77906A240]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Order_id]</local-name>
+            <parent-name>[ORDERS]</parent-name>
+            <remote-alias>Order_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ORDERS_661298E648794023A2ABB6D77906A240]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[ORDERS]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[ORDERS_661298E648794023A2ABB6D77906A240]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product_id]</local-name>
+            <parent-name>[ORDERS]</parent-name>
+            <remote-alias>Product_id</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ORDERS_661298E648794023A2ABB6D77906A240]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Customer id' datatype='string' name='[Customer_id]' role='dimension' type='nominal' />
+      <column caption='Order id' datatype='string' name='[Order_id]' role='dimension' type='nominal' />
+      <column caption='Product id' datatype='string' name='[Product_id]' role='dimension' type='nominal' />
+      <column caption='ORDERS' datatype='table' name='[__tableau_internal_object_id__].[ORDERS_661298E648794023A2ABB6D77906A240]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/gvanj/AppData/Local/Temp/TableauTemp/#TableauTemp_09b5shf1q472jj141qlqg1n5o4w9.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/18/2026 08:01:23 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Customer_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>ORDERS</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[ORDERS_661298E648794023A2ABB6D77906A240]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Order_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Order_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ORDERS</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[ORDERS_661298E648794023A2ABB6D77906A240]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sales</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sales</remote-alias>
+              <ordinal>2</ordinal>
+              <family>ORDERS</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ORDERS_661298E648794023A2ABB6D77906A240]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Product_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Product_id</remote-alias>
+              <ordinal>3</ordinal>
+              <family>ORDERS</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[ORDERS_661298E648794023A2ABB6D77906A240]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='ORDERS' id='ORDERS_661298E648794023A2ABB6D77906A240'>
+            <properties context=''>
+              <relation connection='excel-direct.0x409so0pyxkse1aabz4d0z404e0' name='ORDERS' table='[ORDERS$]' type='table'>
+                <columns gridOrigin='A1:D21:no:A1:D21:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Customer_id' ordinal='0' />
+                  <column datatype='string' name='Order_id' ordinal='1' />
+                  <column datatype='real' name='Sales' ordinal='2' />
+                  <column datatype='string' name='Product_id' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Customers+ (Multiple Connections)' name='federated.059glx91bcyk6o12c7zjz0qs13fs' />
+            <datasource caption='ORDERS (Orders)' name='federated.0tbha7z01rvsem16spgnl1q1z08p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.059glx91bcyk6o12c7zjz0qs13fs'>
+            <column caption='Customer id' datatype='string' name='[Customer_id]' role='dimension' type='nominal' />
+            <column datatype='string' name='[First Name]' role='dimension' type='nominal' />
+            <column-instance column='[Customer_id]' derivation='None' name='[none:Customer_id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[First Name]' derivation='None' name='[none:First Name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0tbha7z01rvsem16spgnl1q1z08p'>
+            <column caption='Customer id' datatype='string' name='[Customer_id]' role='dimension' type='nominal' />
+            <column caption='Order id' datatype='string' name='[Order_id]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Customer_id]' derivation='None' name='[none:Customer_id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Order_id]' derivation='None' name='[none:Order_id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0tbha7z01rvsem16spgnl1q1z08p].[sum:Sales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.059glx91bcyk6o12c7zjz0qs13fs].[none:Customer_id:nk] / ([federated.0tbha7z01rvsem16spgnl1q1z08p].[none:Customer_id:nk] / ([federated.059glx91bcyk6o12c7zjz0qs13fs].[none:First Name:nk] / [federated.0tbha7z01rvsem16spgnl1q1z08p].[none:Order_id:nk])))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{3D31F9B1-05FC-4032-8948-A1DFD229D0CC}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.059glx91bcyk6o12c7zjz0qs13fs].[none:Customer_id:nk]</field>
+            <field>[federated.059glx91bcyk6o12c7zjz0qs13fs].[none:First Name:nk]</field>
+            <field>[federated.0tbha7z01rvsem16spgnl1q1z08p].[none:Customer_id:nk]</field>
+            <field>[federated.0tbha7z01rvsem16spgnl1q1z08p].[none:Order_id:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{34277934-5840-4876-987E-BB665FFD58D2}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='150' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
